@@ -21,3 +21,15 @@ I also made separated datasets on different tabs for participants that received
 This is probably more data than you need but I thought I would get you all of the relevant outcome data that I have.
 
 Also, I have been using the PSSI5 scores for PTSD outcomes as this scale was collected closer to each infusion than the CAPS5 and showed more robust treatment effects than the CAPS5. For completeness, however, I included CAPS5.
+
+## Getting grid data for study 311
+
+Here is how to retrieve events and procedures for study 311 and storing them into json files.
+
+Code can be found here: https://github.com/kelvinlim/grid_api/releases 
+
+```
+(base) kolim@Kelvins-Mac-Studio grid_api % ~/bin/gridapi-macos-1.0.7 studies events 311 --format json > ~/BoxDrive/311_Rawls_analysis/events.json              
+(base) kolim@Kelvins-Mac-Studio grid_api % ~/bin/gridapi-macos-1.0.7 studies procedures 311 --format json > ~/BoxDrive/311_Rawls_analysis/procedures.json
+(base) kolim@Kelvins-Mac-Studio grid_api % 
+```
